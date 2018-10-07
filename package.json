@@ -1,0 +1,41 @@
+{
+  "name": "12-api-gateway",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gateway-server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "export NODE_ENV=test || SET NODE_ENV=\"test\" && mocha server/**/tests/*.test.js",
+    "test-watch": "nodemon --exec \"npm test\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-http-proxy": "^1.2.0",
+    "amqplib": "^0.5.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "jsonwebtoken": "^8.3.0",
+    "lodash": "^4.17.11",
+    "moment": "^2.22.2",
+    "momentjs": "^2.0.0",
+    "mongoose": "^5.2.15",
+    "mongoose-unique-validator": "^2.0.2",
+    "pm2": "^3.2.1",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "mochawesome": "^3.0.3",
+    "mongodb": "^3.1.6",
+    "supertest": "^3.3.0",
+    "ts-node": "~7.0.0",
+    "expect": "^23.6.0"
+  },
+  "engines": {
+    "node": "10.8.0",
+    "npm": "6.2.0"
+  }
+}
